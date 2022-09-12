@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Список</title>
+</head>
+<body>
+	<p><b>Нумерованный список гиперссылок:</b></p>
+	<ol>
+		<li><a href="http://vk.ru">VK</a></li>
+	      <li><a href="https://www.youtube.com/">YouTube</a></li>
+	      <li><a href="ftp://golosovanie.ru/hranilishe/spisok.txt">Без авторизации</a></li>
+	      <li><a href="ftp://test:password@sgolosovanie.ru/hranilishe/spisok.txt">С авторизацией</a></li>
+	      <li><a href="https://shoolsite.html#bottom">Ссылка на часть страницы(якорь)</a></li>
+	      <li><a href="#top">Ссылка на начало страницы</a></li>
+	      <li><a href="https://github.com/?branch=master&repo=chat">Ссылка с двумя параметрами</a></li>
+	      <li><a href="#anchor">Начало страницы</a>      <a href="#">Главная</a></li>
+	      <li><a>Ссылка без href</a></li>
+	      <li><a href="">Ссылка с пустым href</a></li>
+	      <li><a href="https://www.youtube.com/" rel="nofollow">Ссылка , по которой запрещен переход поисковикам</a></li>
+	      <li><a href="https://www.youtube.com/" rel="noindex">Ссылка ,запрещенная для индексации поисковиками</a></li>
+	      <li><h3>Пример абзаца для контекстной ссылки</h3>
+	        <p>
+	          <h2><a name="name_link"></a><a href="https://ru.wikipedia.org/wiki/Карл_III_(король_Великобритании)">Карл III</a>  (англ. Charles III, произношение: /tʃɑːlz/), полное имя Карл Фили́пп Арту́р Георг (англ. Charles Philip Arthur George; род. 14 ноября 1948, Букингемский дворец, Лондон) — царствующий король Великобритании и Северной Ирландии и королевств Содружества из Виндзорской династии, верховный главнокомандующий вооружёнными силами Великобритании, верховный правитель Церкви Англии, глава Содружества наций с 8 сентября 2022 года. Действующий монарх в четырнадцати независимых государствах: Австралии, Антигуа и Барбуде, Багамских Островах, Белизе, Гренаде, Канаде, Новой Зеландии, Папуа — Новой Гвинее, Сент-Винсенте и Гренадинах, Сент-Китсе и Невисе, Сент-Люсии, Соломоновых Островах, Тувалу и Ямайке.</a></h2>
+	        </p>
+	      </li>
+	      <li><a href="https://self-learning.ru/course/sql-basics?utm_source=infocomp&utm_medium=banner&utm_campaign=sqlbasics&utm_content=sidebar"><img src="img.png" width="100" height="100" alt="flower"></a></li><li>
+	        <img src="image.jpg" width="800" height="500" usemap="#navigation" alt="map">
+	        <map name="navigation">
+	          <area shape="circle"
+	          coords="400,400,200"
+	          href="https://www.php.net/manual/ru/book.json.php"
+	          alt="circle">
+	          <area shape="rect"
+	          coords="0,0,200,200"
+	          href="https://info-comp.ru/database-normalization"
+	          alt="rectangle">
+	        </map>
+	      </li>
+	      <li><a href="demo.html">Относительная ссылка на файл в том же каталоге</a></li>
+	      <li><a href="about/content.html">Относительная ссылка на файл в каталоге about</a></li>
+	      <li><a href="./privet.html">Относительная ссылка на файл в каталоге, выше нынешнего на один</a></li>
+	      <li><a href="././random.html">Относительная ссылка на файл двумя каталогами выше</a></li>
+	      <li><a href="/">Сокращенная ссылка на главную</a></li>
+	      <li><a href="#name_link">Сокращенная на внутреннюю</a></li>
+    </ol>
+
+
+	<form action="/" method="POST">
+
+	    <label>
+	        Введите имя<br>
+	        <input name="field-name-1" value="Malder">
+	    </label><br>
+
+	    <label>
+	        Введите email:<br>
+	        <input name="field-email" value="test@example.com" type="email">
+	    </label><br>
+
+	    <label>
+	        Введите дату рождения<br>
+	        <input name="field-date" value="2021-09-08" type="date">
+	    </label><br>
+
+	    Введите пол:<br>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+	        Мужской</label><br>
+	    <label><input type="radio" name="radio-group-1" value="Значение2">
+	        Женский</label><br>
+
+	    Выберите кол-во конечностей:<br>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+	        1</label>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+	        2</label>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
+	        3</label>
+	    <label><input type="radio" name="radio-group-1" value="Значение4">
+	        4</label>
+	    <label><input type="radio" name="radio-group-1" value="Значениие 5">
+	        Больше 4х</label><br>
+
+	    <label>
+	        Сверхспособности:
+	        <br>
+	        <select name="field-name-4[]" multiple="multiple">
+	            <option value="Значение1">Бессмертие</option>
+	            <option value="Значение2" selected="selected">Левитация</option>
+	            <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
+	        </select>
+	    </label><br>
+
+	    <label>
+	        Биография:
+	        <br>
+	        <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
+	    </label><br>
+
+	    <label><input type="checkbox" checked="checked" name="check-1">
+	        с контрактом ознакомлен (а)</label><br>
+
+	    <input type="submit" value="Отправить">
+	</form>
+
+</body>
+</html>
