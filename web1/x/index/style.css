@@ -1,152 +1,253 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-*,*:before,*:after{
+
+*,
+*:before,
+*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-:focus,:active{outline:none;}
-a:focus,a:active{outline:none;}
-nav,footer,header,aside{display: block;}
-html,body{
-    height:100%;
-    width:100%;
-    font-size:100%;
-    line-height:1;
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
     font-size: 14px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
 /*----------------------------------------------------------------------------------------------------*/
-body{
+body {
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-a{
-    color:inherit;
+
+a {
+    color: inherit;
 }
-.wrapper{
-    min-height:100%;
-    overflow:hidden;
-    display:flex;
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
 }
-._container{
-    width:100%; 
-    margin: 0px auto;   
+
+._container {
+    width: 100%;
+    margin: 0px auto;
 }
-.header{
-    order:-3;
+
+.header {
+    order: -3;
 }
-.menu{
-    order:-2;
+
+.menu {
+    order: -2;
 }
-.dz_links{
-    order:-1;
+
+.dz_links {
+    order: -1;
 }
-.form{
-    order:0;
+
+.form {
+    order: 0;
 }
-.table{
-    order:1;
+
+.table {
+    order: 1;
 }
-.footer{
-    order:2;
+
+.footer {
+    order: 2;
 }
-@media screen and (min-width:700px){
-    ._container{
-        width:960px;
+
+.calc {
+    order: 1;
+}
+
+@media screen and (min-width:700px) {
+    ._container {
+        width: 960px;
         margin: 0px auto;
     }
-    .header{
-        order:-3;
+
+    .header {
+        order: -3;
     }
-    .menu{
-        order:-2;
+
+    .menu {
+        order: -2;
     }
-    .dz_links{
-        order:-1;
+
+    .dz_links {
+        order: -1;
     }
-    .form{
-        order:1;
+
+    .form {
+        order: 1;
     }
-    .table{
-        order:0;
+
+    .table {
+        order: 0;
     }
-    .footer{
-        order:2;
+
+    .footer {
+        order: 2;
     }
 }
 
 /*--------------ШАПКА-------------------------------------------------------------------------------------------*/
-.logo{
-    float:left;
+.logo {
+    float: left;
     margin-top: 5px;
     margin-right: 20px;
 }
-.logo_title{
+
+.logo_title {
     font-size: 20px;
     line-height: 116%;
     font-weight: 700;
     letter-spacing: 3px;
 }
-@media screen and (min-width:700px){
-    .logo_title{
+
+@media screen and (min-width:700px) {
+    .logo_title {
         font-size: 40px;
         line-height: 116%;
     }
 }
-.header{
+
+.header {
     background: #D8E3AB;
 }
+
 /*-------------MENU---------------------------------------------------------------------------------------------------------*/
-.menu{
+.menu {
     background: #D8E3AB;
 }
-@media screen and (min-width:700px){
-    .menu_list{
+
+@media screen and (min-width:700px) {
+    .menu_list {
         display: flex;
         flex-wrap: nowrap;
-        margin:0px auto;
+        margin: 0px auto;
     }
-    .menu_item:not(:last-child){
+
+    .menu_item:not(:last-child) {
         margin-right: 30%;
     }
 }
+
 /*-----------ССЫЛКИ--------------------------------------------------------------------------------------------------------------*/
-.dz_links{
-    padding:0px 0px 10px 30px;
+.dz_links {
+    padding: 0px 0px 10px 30px;
 }
+
 /*------------ТАБЛИЦА---------------------------------------------------------------------------------------------------------------------*/
-.table_title{
+.table_title {
     font-weight: 700;
     font-size: 30px;
     line-height: 116%;
 }
-.nechet{
+
+.nechet {
     background: #D8E3AB;
 }
-.table{
-    margin:0px 0px 10px 0px;
+
+.table {
+    margin: 0px 0px 10px 0px;
 }
+
 /*------------ФОРМА---------------------------------------------------------------------------------------------------------------------*/
-.form{
-    margin:0px 0px 10px 0px;  
+.form {
+    margin: 0px 0px 10px 0px;
 }
+
+/*------------КАЛЬКУЛЯТОР---------------------------------------------------------------------------------------------------------------------*/
+.calc {
+    margin: 10px auto;
+}
+
+.calc__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 116%;
+    margin-bottom: 5px;
+}
+
 /*------------ПОДВАЛ----------------------------------------------------------------------------------------------------------------------*/
-.footer{
-    height:20px;
-    background: #D8E3AB; 
+.footer {
+    height: 20px;
+    background: #D8E3AB;
 }
